@@ -8,7 +8,7 @@ Docker FastAPI projects
 
 *Well-documented examples of deployment-ready FastAPI applications written from scratch.*
 
-So, you want to include a docker in your FastAPI app, but there is a Great Wall?
+You want to include a docker in your FastAPI app, but there is a Great Wall?
 --------------------------------------------------------------------------------
 
 **That's definitely a good place to learn how to jump over it.**
@@ -28,10 +28,12 @@ Nice to have:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Basics:
+   :caption: Basic examples:
 
    introduction
-   basic_uvicorn
+   deployment
+   uvicorn
+   nginx
 
 .. _Docker: https://www.docker.com/
 .. _REST: https://restfulapi.net

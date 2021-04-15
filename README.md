@@ -19,3 +19,15 @@ This project is an attempt at an orderly way through the process of creating mor
 - Literally any knowledge of `Docker` (`Docker For Beginners Video on YouTube`, `Dockerfile official reference`).
 - `Docker Desktop client` installed on your machine.
 - Any experience with cloud platforms like `AWS`, `Azure`, `Digital Ocean`, `Google Cloud` etc. (While an `AWS EC2 instance` will be used in the project, any virtual machine with docker and ssh access will also be excellent).
+
+# Uvicorn
+
+This dead simple application shows you to how to create a simple Docker Image with running FastAPI app with Uvicorn and presenting the basics of creating and running Docker Images.
+
+[See chapter dedicated to this repository](https://docker-fastapi-projects.readthedocs.io/en/latest/uvicorn.html)
+
+# Nginx
+
+This dead simple application shows you to how to create a simple Docker Image with running FastAPI app with Nginx and presenting the basics of creating and running Docker Images.
+
+[See chapter dedicated to this repository](https://docker-fastapi-projects.readthedocs.io/en/latest/nginx.html)
