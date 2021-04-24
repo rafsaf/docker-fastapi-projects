@@ -2,10 +2,6 @@
 
   https://github.com/rafsaf/docker-fastapi-projects-nginx
 
-.. note:: Useful links
-
-  https://unit.nginx.org/howto/fastapi/
-
 .. role:: green
 
 Nginx
@@ -13,22 +9,19 @@ Nginx
 
 
 This dead simple application shows you to how to create a simple Docker Image with running FastAPI app with Nginx and presenting the basics of creating and running Docker Images. Each step is deeply described below.
-You should definitely have :class:`any` clue about what's going on here, there is a great video which helped me out: `Docker For Beginners Video on YouTube`_.
 
-.. _Docker For Beginners Video on YouTube: https://www.youtube.com/watch?v=i7ABlHngi1Q 
 
 Application structure
 ---------------------
 
 .. code-block:: bash
 
-  ├── app
-  |    |── app                   
-  |    |    ├── __init__.py
-  |    |    ├── main.py         # FastAPI app here
-  |    |
-  |    ├── config       
-  |         ├── config.json     # Nginx config file
+  |── app                   
+  |    ├── __init__.py
+  |    ├── main.py              # FastAPI app here
+  |   
+  ├── config       
+  |    ├── config.json          # Nginx config file
   |
   ├── .dockerignore             # similar to .gitignore
   |                             # but for Docker
@@ -40,6 +33,10 @@ Application structure
   |
   ├── requirements.txt          # pip freeze from
   |                             # pip install fastapi
+
+.. admonition:: Useful resources
+
+  https://unit.nginx.org/howto/fastapi/
 
 Files description
 -----------------
@@ -77,7 +74,7 @@ Files description
             "fastapi": {
                 "type": "python 3.9",
                 "path": "/build/app/",
-                "module": "app.main",
+                "module": "main",
                 "callable": "my_fastapi_app"
             }
         }
@@ -104,7 +101,7 @@ Files description
     # Our Debian with Python and Nginx for python apps.
     # See https://hub.docker.com/r/nginx/unit/
 
-    COPY ./app/config/config.json /docker-entrypoint.d/config.json
+    COPY ./config/config.json /docker-entrypoint.d/config.json
 
     # Ok, this is something we get thanks to the Nginx Unit Image.
     # We don't need to call stuff like

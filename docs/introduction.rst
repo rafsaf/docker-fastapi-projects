@@ -15,23 +15,10 @@ The Structure of each chapter
 
 * Application structure
 * Files description
-* Local deployment
-* Troubleshoots
+* Quickstart
+* Other topics/troubleshoots
 
 
-Other useful resources
-----------------------
-
-* `FastAPI docs`_
-* `Docker docs`_
-* `Full stack FastAPI + PostgreSQL template`_
-* `RealWorld example app build with FastAPI`_
-
-
-.. _FastAPI docs: https://fastapi.tiangolo.com/
-.. _Docker docs: https://docs.docker.com/
-.. _Full stack FastAPI + PostgreSQL template: https://github.com/tiangolo/full-stack-fastapi-postgresql
-.. _RealWorld example app build with FastAPI: https://github.com/nsidnev/fastapi-realworld-example-app
 
 .. _GitHub: https://github.com/
 

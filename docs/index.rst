@@ -8,14 +8,10 @@ Docker FastAPI projects
 
 *Well-documented examples of deployment-ready FastAPI applications written from scratch.*
 
-You want to include a docker in your FastAPI app, but there is a Great Wall?
---------------------------------------------------------------------------------
+While the official documentation of `FastAPI`_ covers many of the core topics, for developers unfamiliar with `Docker`_, implementing an actual API can be a nasty experience. There is a huge gulf between the hello-world application on ``localhost:8000`` and the more-life one.
 
-**That's definitely a good place to learn how to jump over it.**
-
-Although the official `FastAPI`_  documentation covers many basic topics, for developers unfamiliar with `Docker`_, deploying a real-world backend API can be a nightmare. There is a huge gulf between the hello-world application on ``localhost:8000`` and the application in production.
-
-This project is an attempt at an orderly way through the process of creating more and more complex APIs, with an emphasis on deployment using ``Docker``.
+This project is an attempt at an orderly way through the process of creating more and more complex APIs, with an emphasis on deployment using ``Docker``. 
+Please note that there is an `official template`_, but it seems to be too elaborate, and besides, it relies on a different ORM, `SQL Alchemy`_, while this project will use `Tortoise ORM`_, as it seems friendlier (in particular for people from the Django community).
 
 Nice to have:
 -------------
@@ -24,7 +20,7 @@ Nice to have:
 * At least basic knowledge of ``Python`` and `FastAPI`_.
 * Literally any knowledge of ``Docker`` (`Docker For Beginners Video on YouTube`_, `Dockerfile official reference`_).
 * `Docker Desktop client`_ installed on your machine.
-* Any experience with cloud platforms like `AWS`_, `Azure`_, `Digital Ocean`_, `Google Cloud`_ etc. (While an ``AWS EC2 instance`` will be used in the project, any virtual machine with docker and ssh access will also be excellent).
+* [Optional] Any experience with cloud platforms like `AWS`_, `Azure`_, `Digital Ocean`_, `Google Cloud`_ etc. (While an ``AWS EC2 instance`` will be used in the project, any virtual machine with docker and ssh access will also be excellent).
 
 .. toctree::
    :maxdepth: 1
@@ -34,6 +30,7 @@ Nice to have:
    deployment
    uvicorn
    nginx
+   nginx_with_postgresql
 
 .. _Docker: https://www.docker.com/
 .. _REST: https://restfulapi.net
@@ -45,6 +42,9 @@ Nice to have:
 .. _Azure: https://azure.microsoft.com/
 .. _Digital Ocean: https://www.digitalocean.com/
 .. _Google Cloud: https://cloud.google.com/
+.. _official template: https://github.com/tiangolo/full-stack-fastapi-postgresql
+.. _SQL Alchemy: https://www.sqlalchemy.org/
+.. _Tortoise ORM: https://tortoise-orm.readthedocs.io/en/latest/
 
 GitHub repository
 -----------------

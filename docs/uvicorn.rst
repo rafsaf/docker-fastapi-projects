@@ -7,9 +7,7 @@ Uvicorn
 
 
 This dead simple application shows you to how to create a simple Docker Image with running FastAPI app with Uvicorn and presenting the basics of creating and running Docker Images. Each step is deeply described below.
-You should definitely have :class:`any` clue about what's going on here, there is a great video which helped me out: `Docker For Beginners Video on YouTube`_.
 
-.. _Docker For Beginners Video on YouTube: https://www.youtube.com/watch?v=i7ABlHngi1Q 
 
 Application structure
 ---------------------
